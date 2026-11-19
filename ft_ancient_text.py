@@ -15,9 +15,17 @@ def ft_ancient_text():
 	print("=== Cyber Archives Recovery ===")
 	print(f"Accessing file `{file.name}` ")
 	print("---")
-	print(in_file)
+	fragment = 0
+	print(f"[FRAGMENT {fragment}]: ", end="")
+	for char in in_file:
+		if char == '\n':
+			fragment += 1
+			print(f"\n[FRAGMENT {fragment}]: ", end="")
+		if char != '\n':
+			print(char, end="")
+	#print(in_file)
 	file.close()
-	print("---")
+	print("\n---")
 	print(f"File '{file.name}' closed.")
 	#if sys.len != 2
 		# break and print
