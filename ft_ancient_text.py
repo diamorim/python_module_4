@@ -23,21 +23,9 @@ def ft_ancient_text():
 			print(f"\n[FRAGMENT {fragment}]: ", end="")
 		if char != '\n':
 			print(char, end="")
-	#print(in_file)
 	file.close()
 	print("\n---")
 	print(f"File '{file.name}' closed.")
-	#if sys.len != 2
-		# break and print
-	#var file
-	#tries 
-	#	while i < len(sys.argv)
-			#file = sys.argv
-	#except not file
-		#print file not found
-	#
-	#in_file = read(file)
-	#print(file)
 	
 	
 
