@@ -8,7 +8,7 @@ def ft_ancient_text():
 		return
 	try:
 		file = open(sys.argv[1], "r")
-	except FileNotFoundError:
+	except (FileNotFoundError, PermissionError):
 		print("File was not found")
 		return
 	in_file = file.read()
